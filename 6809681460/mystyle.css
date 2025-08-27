@@ -1,21 +1,88 @@
 @import url(https://fonts.googleapis.com/css?family=Sofia);
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Thai:wght@100..800&display=swap');
-@import url('https://fonts.cdnfonts.com/css/bakery-2');
 
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: sans-serif;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
 }
 
-.mainstory {
-  display: flex;
-  justify-content: center;
-  font-family: 'Bakery', sans-serif;
-  font-size: 100px;
-  color: #B38B6D;
+.headernavbar {
+  list-style-type: none;
   margin: 0;
+  padding: 0 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.header-h1 {
+  margin: 0;
+  padding-left: 40px;
+  font-family: Sofia, sans-serif;
+  font-size: 30px;
+  color: #B38B6D;
+  -webkit-text-stroke: 1px #8B4513;
+}
+
+.headernavbar li {
+  background-color: transparent;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.headernavbar li:hover {
+  background-color: bisque;
+  opacity: 0.5;
+}
+
+.headernavbar li a {
+  display: block;
+  color: #DEB887;
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 32px;
+  text-decoration: none;
+}
+
+.home-background {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('resource/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  background-blend-mode: multiply;
+}
+
+.background-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #F5F5DC;
+  padding-left: 60px;
+}
+
+.background-text h1 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #ffd700,
+    -2px -2px 5px #ff69b4,
+    2px 2px 8px #00ffff;
+    font-size: 100px;
+}
+
+.background-text h2 {
+  margin-top: 0;
+  color: #f1fac0;
+  font-size: 60px;
+}
+
+.background-text p {
+  color: #f1fac0;
+  font-size: 20px;
+}
+
+.headernavbar li:hover a {
+  color: #111;
 }
 
 .center-icon-divider {
@@ -120,63 +187,36 @@
   }
 }
 
-.wrapper{
+.img-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 40px;
+}
+
+.img-list img {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 75px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
 }
 
-.img1 {
-  object-fit: contain;
-  position: relative;
-}
-
-img{
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-
-.content1{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: 0.6s;
-}
-
-.content1:hover{
+.click-buy img {
   opacity: 1;
+  transition: transform 100ms ease-in-out, opacity 150ms ease-in-out;
 }
 
-.content1 h1 {
-  font-size: 42px;
-  color: #00ff84;
-  margin-bottom: 10 px;
+.click-buy img:hover {
+  transform: scale(1.1);
+  opacity: 0.6;
+  transition-delay: 100ms;
 }
 
-.content1 p{
-  font-size: 21px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.content1 > *{
-  transform: translateY(25px);
-  transition: transform 0.6s;
-}
-
-.content1:hover > *{
-  transform: translateY(0px);
+.footer-container {
+  display: flex;
+  background-color: #8B4513;
 }
 
 hr {

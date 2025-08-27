@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
-    <title>My Shop</title>
+    <title>MyShop</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background-color: bisque;
             background-repeat: no-repeat;
             background-size: cover;
@@ -16,9 +18,31 @@
 </head>
 
 <body>
-    <h1 class="mainstory" align="center">
-        Gear's bakery
-    </h1>
+    <header class="header-container">
+        <h1 class="header-h1">Gear's bakery</h1>
+        <ul class="headernavbar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Shop">Shop</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="Home" class="home-background">
+        <div class="background-text">
+            <h1>
+                Welcome to
+                <br>Gear's bakery
+            </h1>
+            <h2>
+                Your daily dose happiness
+            </h2>
+            <p>
+                From our oven to you,
+                <br>We pour our hearts into every loaf, pastry, and sweet we bake.
+            </p>
+        </div>
+    </div>
 
     <div class="center-icon-divider">
         <span>🍞</span>
@@ -45,19 +69,13 @@
 
     <hr class="flowing-divider">
 
-    <div class="wrapper">
-        <div class="img1">
-            <img src="resource/italian-bread.jpg" alt="italian-bread" />
-            <div class="content1">
-                <h1>
-                    Italian bread
-                </h1>
-                <p>
-                    skibidi
-                </p>
+    <div id="Shop" class="click-buy">
+        <div class="img-list">
+            <div>
+                <p> </p>
             </div>
+            <img src="resource/italian-bread.jpg" alt="italian-bread" />
             <img src="resource/asia-bread.jpg" alt="asia-bread" />
-            
             <img src="resource/american-bread.jpg" alt="america-bread" />
             <img src="resource/mexican-sweets.jpg" alt="mexican-sweets" />
             <img src="resource/middle-east-bread.jpg" alt="middle-east-bread" />
@@ -66,10 +84,16 @@
             <img src="resource/apple-pie.jpg" alt="apple-pie" />
         </div>
     </div>
+
+    <hr>
+
+    <footer>
+        <div id="Contact" class="footer-container">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
 </body>
-
-<footer>
-
-</footer>
 
 </html>
