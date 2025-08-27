@@ -117,7 +117,7 @@
 
 .video {
   flex: 0.8;
-  max-width: 600px;
+  max-width: 500px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -133,7 +133,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
 }
 
 .text-box h2 {
@@ -148,8 +148,6 @@
   font-size: 26px;
   font-weight: 500;
   color: #333;
-  text-align: left;
-  align-self: flex-start;
   text-align: center;
   width: 100%;
   margin-top: 0;
@@ -175,48 +173,175 @@
   margin: 20px 0;
 }
 
-@keyframes flow {
-
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
+.container-shop {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
-.img-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 40px;
+.section-title {
+    text-align: center;
+    margin-bottom: 64px;
+    color: white;
+    font-size: 32px;
 }
 
-.img-list img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-
+.albums-title {
+    color: #d3a121;
+    margin-bottom: 80px;
 }
 
-.click-buy img {
-  opacity: 1;
-  transition: transform 100ms ease-in-out, opacity 150ms ease-in-out;
+.albums-section {
+    padding: 96px 24px;
+    background: linear-gradient(135deg, #ffffff 0%, #faf4e4 100%);
 }
 
-.click-buy img:hover {
-  transform: scale(1.1);
-  opacity: 0.6;
-  transition-delay: 100ms;
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin: 40px;
+}
+
+.album-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: white;
+    border: 1px solid #cadeef;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.album-card:hover .album-overlay{
+    background: linear-gradient(to top, rgba(214, 206, 183, 0.8), transparent);
+}
+
+.album-image {
+    height: 256px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.album-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(214, 206, 183, 0), transparent);
+    transition: background 0.5 ease;
+}
+
+.album-overlay:hover {
+    background: linear-gradient(to top, rgba(214, 206, 183, 0.8), transparent);
+}
+
+.album-title-overlay {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    right: 16px;
+    color: white;
+}
+
+.album-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.album-description {
+    color: #cfb677;
+    font-size: 14px;
+    margin-bottom: 16px;
+    margin-bottom: auto;
+}
+
+.album-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+.album-price {
+    display: flex;
+    font-size: 32px;
+    color: #d3a121;
+}
+
+.album-bonus {
+    padding: 0;
+    font-size: 12px;
+    color: #d3c7aa;
+}
+
+.album-tracklist {
+    font-size: 12px;
+    color: #9bd4e4;
+    line-height: 1.5;
+}
+
+.album-tracklist li {
+    margin-bottom: 4px;
 }
 
 .footer-container {
-  display: flex;
-  background-color: #8B4513;
+    background-color: #111;
+    color: #DEB887;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media a {
+    color: #DEB887;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: bisque;
+}
+
+.back-to-top a {
+    color: #DEB887;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 1px solid #DEB887;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-top a:hover {
+    background-color: #DEB887;
+    color: #111;
+}
+
+.copyright p {
+    margin: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
 }
 
 hr {

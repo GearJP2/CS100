@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="cssbait.css">
     <title>MyShop</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: bisque;
+            background-color: #faf4e4;
             background-repeat: no-repeat;
             background-size: cover;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -44,9 +46,9 @@
         </div>
     </div>
 
-    <div class="center-icon-divider">
+    <!-- <div class="center-icon-divider">
         <span>🍞</span>
-    </div>
+    </div> -->
 
     <div class="container">
         <video controls class="video">
@@ -56,42 +58,307 @@
         <div class="text-box">
             <h2>🍞 🥐 📦 Our story 🥨 🥪 🍩</h2>
             <p class="eng-describe">
-                Gear's bakery has been established in 1934 by <br> Rojsak KRITSUTHIKUL in thailand, providing of the
+                Gear's bakery has been established in 1934 by Rojsak KRITSUTHIKUL in thailand, providing of the
                 reasonably priced, fresh, high-quality baked goods and expanded to asia in the same year under thailand.
             </p>
             <p class="thai-describe">
-                ด้วยประสบการณ์ยาวนานกว่า 91 ปี ทำให้เกิดสูตรลับของ คุณเกียร์ ขึ้นมา <br>
+                ด้วยประสบการณ์ยาวนานกว่า 91 ปี ทำให้เกิดสูตรลับของ คุณเกียร์ ขึ้นมา
                 ให้เบเกอรี่ของเราทำให้ชีวิตในทุก ๆ วันของคุณดีขึ้น ด้วยขนมหลากหลายสไตล์ไม่ว่าจะเป็น เอเชีย ยุโรป
                 คะวันออกกลาง อินเดีย เม็กซิกัน อเมริกัน
             </p>
         </div>
     </div>
 
-    <hr class="flowing-divider">
+    <!-- <hr class="flowing-divider"> -->
 
-    <div id="Shop" class="click-buy">
-        <div class="img-list">
-            <div>
-                <p> </p>
+    <section id="albums" class="albums-section">
+        <div class="container-shop">
+            <h2 class="section-title albums-title">
+                <strong>Enchanted Album Collection</strong>
+            </h2>
+
+            <div class="albums-grid">
+
+                <!-- bakery1 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/italian-bread.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>Italian</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            A large, rustic loaf of Italian bread with a <b>golden-brown crust</b>, dusted with sesame
+                            or poppy
+                            seeds. It's sliced to reveal a soft, airy interior. This bread is perfect for sandwiches or
+                            served with olive oil.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>149 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li>
+                                <strong>Ingredients:</strong> This bread is a staple of Italian cuisine, typically made
+                                with a simple list of
+                                ingredients, including flour, water, yeast, and salt.
+                            </li>
+
+                            <li><strong>Calories:</strong> A standard serving of about 50 grams is <i><u>approximately
+                                        142.5 calories</u></i>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bakery2 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/apple-pie.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>Apple pie</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            This looks like a <b>classic apple pie</b> rather than bread. It features <i>a woven lattice
+                                crust</i>,
+                            <i>indicating a sweet</i>, <i>fruit-filled dessert</i>.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>200 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li>
+                                <strong>Ingredients:</strong> Apple pie is a sweet dessert made with a crust of flour,
+                                butter, and sugar,
+                                filled with sliced apples and spices like cinnamon and nutmeg.
+                            </li>
+
+                            <li>
+                                <strong>Calories:</strong> One serving can have an <i><u>average of 243 to 340
+                                        calories</u></i>, depending on the
+                                recipe.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bakery3 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/american-bread.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>American</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            A close-up shot of a large, soft-crusted American-style bread or roll, with a light
+                            <b>golden-brown</b> finish. The bread appears soft and fluffy, making it an excellent choice
+                            for
+                            <b>sandwiches</b> or <b>dinner rolls</b>.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>39 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li><strong>Ingredients:</strong> American bread is a classic soft-crusted bread. It
+                                contains carbohydrates
+                                and protein.</li>
+                            <li><strong>Calories:</strong> A 50-gram serving can contain <i><u>around 137
+                                        calories</u></i>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bakery4 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/asia-bread.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>Asian</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            Neatly stacked slices of classic white bread with a <strong>clean</strong>,
+                            <strong>soft</strong> texture. This bread is ideal
+                            for everyday use, from toast to simple sandwiches.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>20 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li>
+                                <strong>Ingredients:</strong> This bread is a comforting staple, crafted from simple
+                                ingredients: flour,
+                                water, yeast, and a touch of salt.
+                            </li>
+
+                            <li>
+                                <strong>Calories:</strong> A cup of homemade white bread <i><u>(about 237.6
+                                        grams)</u></i> contains approximately 663
+                                calories.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bakery5 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/Croissant.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>Croissant</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            A light and flaky croissant, expertly baked with <b>multiple layers</b> that create a
+                            crescent
+                            shape. The exterior is <i><b>golden</b></i> and <i><b>crisp</b></i>, while the interior
+                            promises a soft, buttery
+                            texture.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>139 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li>
+                                <strong>Ingredients:</strong> A classic butter croissant is made with enriched wheat
+                                flour, butter,
+                                water,
+                                sugar, eggs, and yeast.
+                            </li>
+
+                            <li><strong>Calories:</strong> A single medium croissant <i><u>contains about 231 to 250
+                                        calories</u></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bakery6 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/indian-bread.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>Indian</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            This appears to be a savory Indian-style toast. It's a flatbread or toast piece, topped with
+                            <b>a flavorful mix of spices</b> and <b>vegetables</b>, likely a "masala" blend, giving it a
+                            vibrant,
+                            appetizing look.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>39 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li>
+                                <strong>Ingredients:</strong> This savory dish is made with a base of brown or white
+                                bread topped with a
+                                mixture of vegetables (like onions, tomatoes, and potatoes) and spices.
+                            </li>
+
+                            <li><strong>Calories:</strong> One serving <i><u>contains around 170 calories.</u></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bakery7 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/mexican-sweets.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>Mexican</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            A collection of various baked goods, possibly <b>small rolls</b>, <b>pastries</b>, and
+                            <b>buns</b>, with
+                            different shapes and finishes. They are arranged in a group, showcasing the variety of items
+                            available.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>69 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li>
+                                <strong>Ingredients:</strong> While "assorted" means ingredients vary, most pastries
+                                share a base of
+                                flour,
+                                sugar, butter or milk, and flavorings.
+                            </li>
+
+                            <li>
+                                <strong>Calories:</strong> A general bakery pastry serving can be <i><u>about 833
+                                        calories per 236 grams</u></i>, but
+                                this
+                                can vary widely.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bakery8 -->
+
+                <div class="album-card">
+                    <div class="album-image" style="background-image: url('resource/middle-east-bread.jpg')">
+                        <div class="album-overlay"></div>
+                        <div class="album-title-overlay">
+                            <h3><strong>Middle east</strong></h3>
+                        </div>
+                    </div>
+                    <div class="album-content">
+                        <p class="album-description">
+                            Several pieces of round, pillowy flatbreads. The bread has a
+                            <b>soft texture</b> with <b>a few charred spots</b>, which is common with an oven-baked flatbread, making
+                            it perfect for <b>dipping or accompanying curries</b>.
+                        </p>
+                        <div class="album-info">
+                            <span class="album-price"><strong>119 Baht</strong></span>
+                        </div>
+                        <ul class="album-bonus">
+                            <li>
+                                <strong>Ingredients:</strong> Naan is a soft, pillowy flatbread made with a mix of
+                                flour, water, yeast,
+                                eggs,
+                                and salt. It may also include yogurt.
+                            </li>
+
+                            <li><strong>Calories:</strong> One piece of plain naan contains <i><u>about 262
+                                        calories</u></i>.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <img src="resource/italian-bread.jpg" alt="italian-bread" />
-            <img src="resource/asia-bread.jpg" alt="asia-bread" />
-            <img src="resource/american-bread.jpg" alt="america-bread" />
-            <img src="resource/mexican-sweets.jpg" alt="mexican-sweets" />
-            <img src="resource/middle-east-bread.jpg" alt="middle-east-bread" />
-            <img src="resource/indian-bread.jpg" alt="indian-bread" />
-            <img src="resource/Croissant.jpg" alt="Croissant" />
-            <img src="resource/apple-pie.jpg" alt="apple-pie" />
         </div>
-    </div>
-
-    <hr>
+    </section>
 
     <footer>
         <div id="Contact" class="footer-container">
-            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="back-to-top">
+                <a href="#top">Back to Top</a>
+            </div>
+            <div class="copyright">
+                <p>Line: @k.rojsak | Gmail: rojsak.kritsuthikul@gmail.com | Call: 088-295-2841</p>
+                <p>&copy; 2025 Gear's Bakery. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
